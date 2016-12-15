@@ -2,7 +2,6 @@
 applications:
 - name: external-integrations-redis
   memory: 1G
-  buildpack: https://github.com/cloudfoundry-community/tomee-buildpack.git
   path: target/external-integrations-redis.war
 
 
