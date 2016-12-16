@@ -3,8 +3,10 @@
 
 ### Run simple java app
 1. Checkout _v1.0_
+
 >git checkout v1.0
 2. Compile and run app
+
 >mvn clean package && mvn tomcat7:run-war
 3. Login with admin/password to http://localhost:9090
 
