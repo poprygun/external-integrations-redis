@@ -25,7 +25,6 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("user", "testuser");
             session.setMaxInactiveInterval(30 * 60);
-            session.setAttribute("redisKeys", SpringContextBridge.redisService().sessionKeys());
             Cookie userName = new Cookie("user", user);
             userName.setMaxAge(30 * 60);
             response.addCookie(userName);

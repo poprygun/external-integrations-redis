@@ -12,7 +12,6 @@ public class SpringContextBridge implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext applicationContext)
             throws BeansException {
         this.applicationContext = applicationContext;
-        System.out.println("================");
     }
 
     public static RedisOperations redisService() {
