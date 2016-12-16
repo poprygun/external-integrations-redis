@@ -1,5 +1,0 @@
----
-applications:
-- name: external-integrations-redis
-  memory: 1G
-  path: target/external-integrations-redis.war

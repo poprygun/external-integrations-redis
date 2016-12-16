@@ -35,7 +35,7 @@ User=<%=user %>
 <br>
 <% } %>
 <br>
-<a href="CheckoutPage.jsp">Checkout Page</a>
+<a href="CheckoutPage.jsp">Redis Session keys</a>
 <form action="LogoutServlet" method="post">
     <input type="submit" value="Logout">
 </form>
