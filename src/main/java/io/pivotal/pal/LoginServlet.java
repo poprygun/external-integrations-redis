@@ -1,7 +1,5 @@
 package io.pivotal.pal;
 
-import io.pivotal.pal.config.SpringContextBridge;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,6 +33,9 @@ public class LoginServlet extends HttpServlet {
             out.println("<font color=red>Wrong username or password.</font>");
             rd.include(request, response);
         }
+        request.getSession().setAttribute("shoppingCardNoOfItems", 10);
+        System.out.println("======================" + request.getSession().getAttribute("shoppingCardNoOfItems"));
+
     }
 
 }

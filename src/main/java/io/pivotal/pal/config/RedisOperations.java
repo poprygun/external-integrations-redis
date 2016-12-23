@@ -10,7 +10,7 @@ public class RedisOperations {
     private RedisTemplate<String,Object> redisTemplate;
 
     public Set<String> sessionKeys(){
-        return redisTemplate.keys("*");
+        return redisTemplate.keys("spring:session:*");
     }
 
     public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {

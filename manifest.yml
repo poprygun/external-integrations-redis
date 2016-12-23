@@ -2,6 +2,7 @@
 applications:
 - name: external-integrations-redis
   memory: 1G
+  instances: 2
   path: target/external-integrations-redis.war
   services:
     - redis-service
