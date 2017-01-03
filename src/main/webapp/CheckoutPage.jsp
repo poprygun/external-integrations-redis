@@ -28,7 +28,7 @@ for(Cookie cookie : cookies){
 <br>
 <% } %>
 <br>
-<h3>Saved session data populated during login.</h3>
+<h3>Shopping cart - number of items.  Saved session data populated during login.</h3>
 <%= request.getSession().getAttribute("shoppingCardNoOfItems") %>
 <br>
 <form action="LogoutServlet" method="post">
